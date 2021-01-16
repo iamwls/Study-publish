@@ -1,0 +1,46 @@
+.featured {
+  position: relative;
+  height: 310px;
+  background-image: url("./img/issue-1.jpg");
+  background-size: cover;
+}
+
+.text-area {
+  position: absolute;
+  bottom: 36px;
+  left: 24px;
+}
+
+.featured .name {
+  margin-bottom: 12px;
+}
+
+sup {
+  font-size: 10px;
+}
+
+.swiper {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.swiper li {
+  width: 136px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.swiper li:nth-child(1) {
+  background-image: url("img/issue-2.jpg");
+}
+
+.swiper li:nth-child(2) {
+  background-image: url("img/issue-3.jpg");
+}
+
+.swiper li:nth-child(3) {
+  background-image: url("img/issue-4.jpg");
+}
