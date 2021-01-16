@@ -22,6 +22,8 @@ sup {
 .swiper {
   white-space: nowrap;
   overflow-x: scroll;
+  padding: 24px;
+  padding-bottom: 7px;
 }
 
 .swiper li {
@@ -31,6 +33,7 @@ sup {
   background-position: center;
   display: inline-block;
   border-radius: 5px;
+  margin-right: 10px;
 }
 
 .swiper li:nth-child(1) {
@@ -43,4 +46,40 @@ sup {
 
 .swiper li:nth-child(3) {
   background-image: url("img/issue-4.jpg");
+}
+
+.item {
+  padding: 17px 24px 20px 24px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* 리스트 시작 */
+.item .num {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  background-color: #ffe6cf;
+  color: #485762;
+  border-radius: 50%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 20px;
+  top: -10px;
+}
+
+/* 리스트 설명 */
+.item .infos {
+  display: inline-block;
+  width: 80%;
+}
+
+.item .title {
+  font-size: 17px;
+}
+
+.item .description {
+  font-size: 13px;
+  opacity: 0.7;
 }
