@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff3e6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a508b;
+  padding: 8px 12px;
+}
+
+.navbar_logo {
+  font-size: 24px;
+  color: #fff3e6;
+}
+
+.navbar_logo i {
+  color: #c1a1d3;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar_menu li {
+  padding: 8px 12px;
+}
