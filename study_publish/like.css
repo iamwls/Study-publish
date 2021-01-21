@@ -1,9 +1,38 @@
 .search {
   margin: 20px;
+  position: relative;
 }
 
-.search input {
+.search form {
+  display: flex;
+}
+
+.search .search-field {
   width: 100%;
+  flex-shrink: 0;
+  transition: 0.5s;
+}
+
+.search .cancle-btn {
+  flex-shrink: 0;
+  margin-left: 20px;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.search .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  opacity: 0.3;
+}
+
+.search .search-field:focus {
+  flex-shrink: initial;
+}
+
+.search .search-field:focus ~ .cancle-btn {
+  opacity: 1;
 }
 
 .text-area {
