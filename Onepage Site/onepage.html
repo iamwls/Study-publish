@@ -30,6 +30,18 @@
         <section id="madi" class="page3">
             <h2>madi</h2></section>
         <section id="goout" class="page4">
-            <h2>goout</h2></section>			
+            <h2>goout</h2></section>	
+
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script src="js/node_modules/jquery.scrollto/jquery.scrollTo.min.js"></script>
+            <script>
+                $(function(){
+                    $('nav a').click(function(e){
+                        $.scrollTo(this.hash ||0,1500);
+                        e.preventDefalut();
+                    });
+                });
+            </script>
+
 	</body>	
 </html>
