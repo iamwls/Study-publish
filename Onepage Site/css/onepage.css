@@ -62,5 +62,21 @@ section h2 {
 }
 
 .page1 {
-  background: url();
+  background: url(../images/olioapp.png);
+  background-size: cover;
+}
+
+.page2 {
+  background: url(../images/ondo.png);
+  background-size: cover;
+}
+
+.page3 {
+  background: url(../images/MADI.png);
+  background-size: cover;
+}
+
+.page4 {
+  background: url(../images/goout.png);
+  background-size: cover;
 }
