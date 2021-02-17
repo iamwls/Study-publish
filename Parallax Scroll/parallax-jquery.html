@@ -41,5 +41,15 @@
             </section>
         </div>
       </div>
+      <script src="js/jquery-2.2.4.min.js"></script>
+      <script>
+        $(function(){
+          $('.icon img').hover(function(){
+            $(this).attr('src',$(this).attr('src').replace('.png','_over.png'));
+          },function(){
+            $(this).attr('src',$(this).attr('src').replace('_over.png','.png'));
+          });
+        });
+      </script>
   </body>
 </html>
