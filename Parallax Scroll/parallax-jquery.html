@@ -10,7 +10,7 @@
       <div id="wrap">
 
         <!-- 첫 번째 섹션 정의 -->
-          <div id="ms1" class="container">
+          <div id="ms1" class="container bg-holder" data-width="1200" data-height="730">
               <section class="content">
                   <h3>It's bean o'clock</h3>
                   <p>더치커피와 원두커피 전문 쇼핑몰 빈어클락입니다.
@@ -20,7 +20,7 @@
           </div>
 
           <!-- 두 번째 섹션 정의 -->
-          <div id="ms2" class="container">
+          <div id="ms2" class="container bg-holder" data-width="1200" data-height="730">
               <section class="content">
                   <h3>Cold brewed coffee</h3>
                   <p>믿을 수 있는 고품질의 더치커피를 찾으신다면<br>
@@ -31,7 +31,7 @@
           </div>
 
           <!-- 세 번째 섹션 정의 -->
-          <div id="ms3" class="container">
+          <div id="ms3" class="container bg-holder" data-width="1200" data-height="730">
             <section class="content">
                 <h3>Roasted bean</h3>
                 <p>주문 후 로스팅한 신선한 원두를<br>
@@ -42,8 +42,12 @@
         </div>
       </div>
       <script src="js/jquery-2.2.4.min.js"></script>
+      <script src="js/jquery.parallax-scroll.min.js"></script>
       <script>
         $(function(){
+          $('.bg-holder').parallaxScroll({
+            friction:0.3
+          });
           $('.icon img').hover(function(){
             $(this).attr('src',$(this).attr('src').replace('.png','_over.png'));
           },function(){
