@@ -44,6 +44,35 @@ p {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+#navi {
+  position: fixed;
+  width: 100vw;
+  z-index: 10000;
+  background: #e9592c;
+}
+
+#navi h1 {
+  float: left;
+  padding: 10px 0 0 15px;
+}
+.main-nav {
+  position: relative;
+  float: left;
+  height: 60px;
+  margin: 10px 0 0 50px;
+}
+.main-nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 12px 30px;
+}
+.main-nav a {
+  color: #fff;
+  font-family: Arial;
+  font-size: 20px;
+  text-decoration: none;
+}
 .content h3 {
   font-family: "Nexa Bold";
   color: #e9592c;
