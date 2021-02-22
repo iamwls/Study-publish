@@ -7,21 +7,27 @@
     <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
     <![endif]-->
+    <style>
+      #wrapper {
+        width: 600px;
+        margin: 0 auto;
+      }
+    </style>
   </head>
   <body>
     <div id="wrapper">
       <div class="bxslider">
         <div>
-          <img src="images/things-1.jpeg" />
+          <img src="images/things-1.jpeg" title="슬라이더 연습-1" />
         </div>
         <div>
-          <img src="images/things-2.jpeg" />
+          <img src="images/things-2.jpeg" title="슬라이더 연습-2" />
         </div>
         <div>
-          <img src="images/things-3.jpeg" />
+          <img src="images/things-3.jpeg" title="슬라이더 연습-3" />
         </div>
         <div>
-          <img src="images/things-4.jpeg" />
+          <img src="images/things-4.jpeg" title="슬라이더 연습-4" />
         </div>
       </div>
     </div>
@@ -29,7 +35,13 @@
     <script src="js/jquery.bxslider.js"></script>
     <script>
       $(function () {
-        $(".bxslider").bxSlider();
+        $(".bxslider").bxSlider({
+          slideWidth: 600,
+          captions: true,
+          auto: true, //자동실행
+          autoControls: true, //컨트롤 버튼 표시
+          stopAutoOnclick: true, // 클릭해서 자동 실행 멈출 수 있도록 지정
+        });
       });
     </script>
   </body>
